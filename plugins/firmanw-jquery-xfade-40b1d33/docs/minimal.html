@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type"  content="text/html;charset=UTF-8" />
+<title>Minimal Implementation Demo | jQuery xFade</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.xfade-1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#photos').xfade({height: 430});
+  $('#news').xfade({height: '1em', effect: 'slide'});
+});
+</script>
+</head>
+<body>
+<div id="container">
+<h1>jQuery xFade</h1>
+<h2>Minimal Implementation</h2>
+<h3>Slideshow</h3>
+<ul id="photos">
+  <li><a href="#p1"><img src="images/P10104022-940x430.jpg" /></a></li>
+  <li><a href="#p2"><img src="images/P10104261-940x430.jpg" /></a></li>
+  <li><a href="#p3"><img src="images/P10104291-940x430.jpg" /></a></li>
+</ul>
+<div class="clear">&nbsp;</div>
+<p>Elements</p>
+<pre>
+<code>&lt;ul id=&quot;photos&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#p1&quot;&gt;&lt;img src=&quot;images/P10104022-940x430.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#p2&quot;&gt;&lt;img src=&quot;images/P10104261-940x430.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#p3&quot;&gt;&lt;img src=&quot;images/P10104291-940x430.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<p>Initialization</p>
+<pre>
+<code>$('#photos').xfade({height: 430});</code>
+</pre>
+<h3>News ticker</h3>
+<ul id="news">
+  <li><a href="#n1">Lorem ipsum dolor</a></li>
+  <li><a href="#n2">Sit amet, consectetuer</a></li>
+  <li><a href="#n3">Sdipiscing elit,</a></li>
+  <li><a href="#n4">sed diam nonummy nibh euismod tincidunt ut</a></li>
+  <li><a href="#n5">Nec Lorem.</a></li>
+  <li><a href="#n6">Et eget.</a></li>
+  <li><a href="#n7">Leo orci pede.</a></li>
+  <li><a href="#n8">Ratio randorus wil.</a></li>
+</ul>
+<p>Elements</p>
+<pre>
+<code>&lt;ul id=&quot;news&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#n1&quot;&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n2&quot;&gt;Sit amet, consectetuer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n3&quot;&gt;Sdipiscing elit,&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n4&quot;&gt;sed diam nonummy nibh euismod tincidunt ut&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n5&quot;&gt;Nec Lorem.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n6&quot;&gt;Et eget.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n7&quot;&gt;Leo orci pede.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#n8&quot;&gt;Ratio randorus wil.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+</pre>
+<p>Initialization</p>
+<pre>
+<code>$('#news').xfade({height: '1em', effect: 'slide'});</code>
+</pre>
+<p><a href="index.html">&laquo; Back to index</a></p>
+
+</div>
+</body>
+</html>

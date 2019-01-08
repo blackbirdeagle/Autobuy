@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type"  content="text/html;charset=UTF-8" />
+<title>Advanced Controls Demo | jQuery xFade</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.xfade-1.0.min.js"></script>
+<script type="text/javascript">
+var setOpacity = function(curr, last, el_curr, el_last, elements) {
+  if (last !== null) {
+    $($('li', '#thumbs')[last]).animate({opacity: .6});
+  }
+  $($('li', '#thumbs')[curr]).animate({opacity: 1});
+}
+
+var bindThumbnails = function() {
+  $('a', '#thumbs').each(function() {
+    $(this).unbind();
+    $(this).click(function() {
+      var i = $($(this).parents('li').get(0)).attr('id').substring(6);
+      $('#photos').xfadeTo($('#photo-' + i));
+      return false;
+    });
+  });
+}
+
+$(document).ready(function() {
+  $('#photos').xfade({height: 430, onBefore: setOpacity});
+
+  bindThumbnails();
+
+  $('#append-item').click(function() {
+    var id = $('#thumbs').children().length + 1;
+    var thumb = '<li id="thumb-' + id + '"><a href="#t">' + $('.thumb', '#append').html() + '</a></li>';
+    $(thumb).appendTo('#thumbs');
+
+    var photos = '<li id="photo-' + id + '"><a href="#p">' + $('.photo', '#append').html() + '</a></li>';
+    $(photos).appendTo('#photos');
+    $('#photos').xfadeRefresh();
+
+    bindThumbnails();
+  });
+
+  $('#remove-item').click(function() {
+    $('#thumbs').children().last().remove();
+    $('#photos').children().last().remove();
+    $('#photos').xfadeRefresh();
+  });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<h1>jQuery xFade</h1>
+<h2>Advanced Controls</h2>
+<p>Control the xFade at your needed.</p>
+<div id="demo">
+  <ul id="photos">
+    <li id="photo-1"><a href="#p1"><img src="images/P10104022-940x430.jpg" /></a></li>
+    <li id="photo-2"><a href="#p2"><img src="images/P10104261-940x430.jpg" /></a></li>
+    <li id="photo-3"><a href="#p3"><img src="images/P10104291-940x430.jpg" /></a></li>
+  </ul>
+  <p>Jump control with <em>.xfadeTo()</em> (click the thumbnail). The opacity of the image assigned by callback before the transition via <em>onBefore</em> option.</p>
+  <ul id="thumbs">
+    <li id="thumb-1"><a href="#t1"><img src="images/P10104022-76x76.jpg" /></a></li>
+    <li id="thumb-2"><a href="#t2"><img src="images/P10104261-76x76.jpg" /></a></li>
+    <li id="thumb-3"><a href="#t3"><img src="images/P10104291-76x76.jpg" /></a></li>
+  </ul>
+  <div class="clear">&nbsp;</div>
+  <p><em>.xfadeRefresh()</em> usefull when append or remove the item(s) from container. Its refresh the items without interupting the current transition.</p>
+  <p><input type="button" id="append-item" value="Append" />
+  <input type="button" id="remove-item" value="Remove" /></p>
+</div>
+<p><a href="index.html">&laquo; Back to index</a></p>
+</div>
+<div id="append" style="display: none;">
+  <a class="photo" href=""><img src="images/P10103982-940x430.jpg" /></a>
+  <a class="thumb" href=""><img src="images/P10103982-76x76.jpg" /></a>
+</div>
+</body>
+</html>

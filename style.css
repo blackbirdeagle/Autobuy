@@ -1,0 +1,1877 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.eot');
+    src: local('OpenSans'),
+    url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Regular.woff') format('woff'),
+    url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('fonts/OpenSans-Bold.eot');
+    src: local('OpenSansBold'),
+    url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Bold.woff') format('woff'),
+    url('fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('fonts/FiraSans.eot');
+    src: local('FiraSans'),
+    url('fonts/FiraSans.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans.woff') format('woff'),
+    url('fonts/FiraSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FiraSansBold';
+    src: url('fonts/FiraSans-Bold.eot');
+    src: local('FiraSansBold'),
+    url('fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FiraSans-Bold.woff') format('woff'),
+    url('fonts/FiraSans-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-shadow: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html{
+
+}
+
+body{
+    color: #000;
+    font-size: 14px;
+    font-family: 'OpenSans';
+    line-height: 1;
+}
+
+a{
+    color: #000;
+
+}
+
+a:hover{
+    color: #000 ;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    padding: 0 80px;
+}
+/*--------------------------------------------------*/
+.header{
+    padding: 11px 0;
+}
+
+.header .container{
+    position: relative;
+}
+
+.header__wrap{
+    overflow: hidden;
+}
+
+.logo{
+    display: block;
+    float: left;
+}
+
+.header__wrap__right{
+    float: right;
+}
+
+.social__top{
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.social__top li{
+    float: left;
+    margin-right: 21px;
+}
+
+.social__top li:last-child{
+    margin-right: 0;
+}
+
+.lk__link{
+    float: left;
+    padding-right: 21px;
+    border-right: 1px solid #de3227;
+    margin-right: 20px;
+}
+
+.lk__link__lk{
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+
+.lk__link__lk:hover{
+    text-decoration: none;
+}
+
+.lk__link__input-output{
+    color: #e63429;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.lk__link__input-output a{
+    color: #e63429;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.lk__link__input-output a:hover{
+    text-decoration: none;
+}
+
+.top__phone{
+    float: left;
+}
+
+.top__phone__tel{
+    font-size: 25px;
+    font-family: 'FiraSansBold';
+    display: block;
+}
+
+.top__phone__callback{
+    text-transform: uppercase;
+}
+
+.mobile__menu{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    z-index: 9;
+}
+
+.float__menu{
+    position: fixed;
+    top: 0;
+    left: -290px;
+    z-index: 16;
+    background-color: #fff;
+    height: 100%;
+    padding: 40px 20px;
+    width: 290px;
+    overflow-y: auto;
+}
+
+.hide__menu{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 18px;
+}
+
+.float__menu p{
+    margin: 30px 0 15px 0;
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+}
+
+.float__menu ul li{
+    margin-bottom: 10px;
+}
+
+.float__menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+.float__menu ul li a{
+    font-size: 16px;
+}
+
+.screen1{
+    margin-top: 51px;
+}
+
+.screen1__wrap{
+    position: relative;
+    min-height: 267px;
+    background-repeat: no-repeat;
+    background-position: right 43px;
+    background-image: url(images/car_street.png);
+}
+
+.screen1__wrap h1{
+    font-family: 'FiraSans';
+    font-size: 24px;
+}
+
+.screen1__wrap h1 span{
+    font-family: 'FiraSansBold' !important;
+    font-size: 42px !important;
+}
+
+.screen1__wrap h1 span a{
+    text-decoration: underline;
+}
+
+.screen1__wrap h1 span a:hover{
+    text-decoration: none;
+}
+
+.top__menu{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.top__menu li{
+    float: left;
+}
+
+.top__menu li a{
+    display: block;
+    padding: 13px 32px;
+    border-bottom: 3px solid #fff;
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+}
+
+.top__menu li a.active{
+    border-bottom: 3px solid #de3227;
+}
+
+.top__menu li a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid #de3227;
+}
+
+.top__video{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 295px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-image: url(images/play.png);
+    padding-left: 78px;
+    font-size: 12px;
+}
+
+.top__video span{
+    font-size: 14px;
+    font-family: 'FiraSansBold';
+    margin-bottom: 7px;
+    display: block;
+}
+
+.filters{
+    padding: 9px 0 26px 0;
+    background-color: #f1f5f4;
+    border-top: 1px solid #dfe5e7;
+}
+
+.filters__form{
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+
+.filters__form select{
+    float: left;
+    height: 32px;
+    border: 1px solid #c5ccd4;
+    border-radius: 14px;
+    -webkit-appearance: none;
+    background-image: url('images/select1.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    line-height: 1em;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    padding: 0 18px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.filters__form select:last-child{
+    margin-right: 0;
+}
+
+.filters__form__marka{
+    width: 192px;
+}
+
+.filters__form__model{
+    width: 114px;
+}
+
+.filters__form__year{
+    width: 108px;
+}
+
+.filters__form__pricefrom{
+    width: 121px;
+}
+
+.filters__form__priceto{
+    width: 121px;
+}
+
+.filters__form__kolvo{
+    width: 136px;
+}
+
+.search__avto{
+    text-align: center;
+    color: #fff;
+    font-family: 'FiraSansBold';
+    display: block;
+    background-color: #e63429;
+    height: 30px;
+    border-radius: 12px;
+    float: left;
+    width: 133px;
+    padding-top: 9px;
+}
+
+.search__avto:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hits{
+    background-image: url(images/hits.png);
+}
+
+.do__500{
+    background-image: url(images/do_500.png);
+}
+
+.diesel{
+    background-image: url(images/diesel.png);
+}
+
+.do__lyam{
+    background-image: url(images/do_lyam.png);
+}
+
+.cars{
+    padding: 27px 0 244px 0;
+    border-top: 1px solid #dfe5e7;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url(images/street.jpg);
+    margin-bottom: 8px;
+}
+
+.cars__wrapper{
+    margin-top: 17px;
+}
+
+.cars__sort li{
+    float: left;
+    margin-right: 24px;
+}
+
+.cars__sort li:last-child{
+    margin-right: 0;
+}
+
+.cars__sort li a{
+    font-size: 16px;
+    text-decoration: underline;
+    display: block;
+}
+
+.cars__sort li a.active{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    text-decoration: none;
+    margin-top: -12px;
+}
+
+.cars__sort li a.active span{
+    color: #de3227;
+}
+
+.cars__item{
+    border: 1px solid #e3e3e3;
+    box-shadow: 2px 5px 4px #e3e3e3;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 31px;
+}
+
+.cars__item a{
+    display: block;
+}
+
+.cars__item a:hover{
+    text-decoration: none;
+}
+
+.cars__item img{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.like{
+    width: 34px;
+    height: 48px;
+    top: 0;
+    right: 16px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/like.png);
+    z-index: 1;
+}
+
+.cars__item__info{
+    position: relative;
+}
+
+.cars__item__info__param{
+    margin-left: 13px;
+    padding-left: 13px;
+    padding-top: 23px;
+    padding-bottom: 3px;
+    border-left: 1px solid #000;
+    margin-top: -11px;
+}
+
+.cars__item__info__param__name{
+    font-family: 'FiraSansBold';
+    font-size: 18px;
+}
+
+.cars__item__info__param__desc{
+    margin-top: 9px;
+}
+
+.cars__item__info__rating{
+    position: absolute;
+    width: 84px;
+    height: 80px;
+    background-color: #eeeeee;
+    right: 0;
+    top: 13px;
+    padding: 7px;
+}
+
+.cars__item__info__rating p{
+    text-align: center;
+}
+
+.cars__item__info__rating__num{
+    font-size: 30px;
+    font-family: 'FiraSansBold';
+}
+
+.cars__item__info__rating__1{
+    font-size: 10px;
+}
+
+.cars__item__info__rating__stars{
+    overflow: hidden;
+    margin-top: 11px;
+}
+
+.cars__item__info__rating__stars li{
+    float: left;
+}
+
+.cars__item__info__rating__stars li img{
+    width: auto;
+    z-index: 1;
+}
+
+.cars__item__info__price{
+    padding: 0 26px;
+    margin-top: 22px;
+}
+
+.cars__item__info__price__value{
+    font-size: 24px;
+    color: #e9352a;
+    font-family: 'FiraSansBold';
+}
+
+.in__loan{
+    margin-top: 8px;
+}
+
+.in__loan span{
+    text-decoration: underline;
+}
+
+.cars__item__info__price__phone{
+    padding: 0 26px;
+    margin-top: 43px;
+}
+
+.cars__item__info__price__phone a{
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+    margin-bottom: 5px;
+}
+
+.all__offers{
+    display: block;
+    width: 420px;
+    margin: 0 auto 0 auto;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'FiraSansBold';
+    background: linear-gradient(to top, #de3227, #de3227);
+    border-radius: 9px;
+    padding-top: 9px;
+    box-shadow: 0 3px 5px #adaeae;
+}
+
+.all__offers:hover{
+    color: #fff;
+    text-decoration: none;
+}
+/*--------------------------------------------------*/
+.advantages{
+    padding: 30px 0 40px 0;
+    background-color: #f1f5f4;
+}
+
+.track {
+    width: 100% !important;
+    position: relative;
+    display: block;
+    height: 5px;
+    background-color: #de3227;
+    border-radius: 2px;
+}
+
+.track .thumb {
+    width: 30px !important;
+    height: 30px;
+    top: -13px;
+    position: absolute;
+    background-image: url(images/polzunok.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    cursor: pointer;
+}
+
+#view {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#items {
+    margin: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    display: block;
+    height: 200px;
+    list-style: none none;
+}
+
+#items li {
+    float: left;
+    display: block;
+}
+
+#view1 {
+    position: relative;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#items1 {
+    margin: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    display: block;
+    height: 200px;
+    list-style: none none;
+}
+
+#items1 li {
+    float: left;
+    display: block;
+}
+
+#items1 li a{
+    display: block;
+    width: 196px;
+    padding-left: 43px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    min-height: 33px;
+    text-decoration: underline;
+}
+
+#items1 li a:hover{
+    text-decoration: none;
+}
+
+.adv__item{
+    width: 324px;
+    min-height: 170px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.adv__item__name{
+    margin: 14px 0 20px 0;
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+}
+
+.adv__item__text{
+    line-height: 1.5;
+}
+/*--------------------------------------------------*/
+.actions{
+    padding: 21px 0 58px 0;
+    border-top: 1px solid #d9dbdc;
+}
+
+.actions h2{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    margin-bottom: 76px;
+}
+
+.form__consult{
+    padding: 27px 0;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-image: url(images/bg.jpg);
+}
+
+.form__consult__head{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'FiraSansBold';
+    line-height: 1.5;
+}
+
+.action__item{
+    text-align: center;
+    min-height: 272px;
+    position: relative;
+}
+
+.action__item__bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid #000;
+}
+
+.action__item__bottom__inner{
+    position: absolute;
+    width: 150px;
+    background-color: #de3227;
+    height: 10px;
+    border-radius: 4px;
+    left: 50%;
+    margin-left: -75px;
+    top: -5px;
+}
+
+.action__item p{
+    margin-top: 30px;
+    padding: 0 40px;
+    line-height: 1.5;
+}
+
+.all__actions{
+    display: block;
+    width: 420px;
+    margin: 60px auto 0 auto;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: 'FiraSansBold';
+    background: linear-gradient(to top, #de3227, #de3227);
+    border-radius: 9px;
+    padding-top: 9px;
+    box-shadow: 0 3px 5px #adaeae;
+}
+
+.all__actions:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.besplatno1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.form__consult__form{
+    margin-top: 30px;
+    padding: 0 40px;
+}
+
+.form__consult__form input[type = "text"]{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #000;
+    border-radius: 9px;
+    padding: 0 18px;
+    color: #000;
+}
+
+.form__consult__form input[type = "submit"]{
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    background-color: #000;
+    font-family: 'FiraSansBold';
+    border: none;
+    border-radius: 9px;
+}
+
+.form__policy{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.reviews{
+    padding: 207px 0 45px 0;
+    background-color: #f1f5f4;
+    background-repeat: no-repeat;
+    background-position: center 12px;
+    background-image: url(images/clouds.png);
+}
+
+.reviews .container{
+    padding: 0 15px;
+}
+
+.reviews h2{
+    text-align: center;
+    font-family: 'FiraSansBold';
+    font-size: 36px;
+    padding-bottom: 30px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: url(images/birds.png);
+}
+
+#reviews__slider{
+    padding: 0 117px;
+}
+
+#reviews__slider{
+    margin-top: 16px;
+}
+
+.review__text{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.review__author{
+    font-size: 18px;
+}
+
+.review__wrap{
+    text-align: center;
+}
+
+.review__wrap img{
+    width: 85px !important;
+    display: block;
+    margin: 50px auto 10px auto;
+}
+
+.owl-prev{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -14px;
+}
+
+.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -14px;
+}
+
+.prezident{
+    border-top: 1px solid #ced3d3;
+}
+
+.prezident__wrap{
+    padding: 45px 0 0 0;
+    background-repeat: no-repeat;
+    background-position: right 28px;
+    background-image: url(images/davno1.png);
+}
+
+.prezident__wrap h2{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    line-height: 1;
+    margin-bottom: 45px;
+}
+
+.prezident__wrap h2 span{
+    font-size: 24px;
+    font-family: 'FiraSans';
+}
+
+.prezident__left p{
+    margin-bottom: 22px;
+}
+
+.prezident__right {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.prezident__right iframe, .prezident__right object, .prezident__right embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.prezident__name{
+    margin-top: 23px;
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+    margin-bottom: 6px;
+}
+
+.email__to__prezident{
+    padding-top: 45px;
+    display: block;
+    margin-top: 21px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(images/pismo.png);
+    text-decoration: underline;
+}
+
+.email__to__prezident:hover{
+    text-decoration: none;
+}
+
+.euro__services{
+    border-top: 1px solid #d9dbdc;
+    border-bottom: 1px solid #d9dbdc;
+}
+
+.euro__services__wrapper{
+    background-repeat: no-repeat;
+    background-position: right 16px;
+    background-image: url(images/street2.png);
+    padding: 150px 0 10px 0;
+}
+
+.services__item{
+    padding: 11px 22px 11px 70px;
+    background-color: #f1f5f4;
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    display: block;
+    min-height: 78px;
+    margin-bottom: 30px;
+}
+
+.euro__services h2{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    line-height: 1;
+    margin-bottom: 45px;
+}
+
+.contacts{
+    padding: 40px 0;
+    border-top: 1px solid #cdd3d2;
+    border-bottom: 1px solid #cdd3d2;
+    background-color: #f1f5f4;
+}
+
+.contacts__head{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.contacts__head span{
+    font-size: 24px;
+    font-family: 'FiraSans';
+    line-height: 1;
+}
+
+#map{
+    height: 220px;
+}
+
+.kak__dobratsya{
+    margin: 30px 0;
+}
+
+.kak__dobratsya a{
+    display: block;
+    text-decoration: underline;
+}
+
+.kak__dobratsya a:first-child{
+    margin-bottom: 3px;
+}
+
+.kak__dobratsya a:hover{
+    text-decoration: none;
+}
+
+.contacts__email{
+    display: block;
+    background-image: url(images/pismo.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 11px 0 11px 60px;
+    text-decoration: underline;
+}
+
+.contacts__email:hover{
+    text-decoration: none;
+}
+
+.contacts__phone{
+    display: block;
+    background-image: url(images/wc2.png);
+    background-repeat: no-repeat;
+    background-position: 11px center;
+    padding: 8px 0 8px 60px;
+    text-decoration: underline;
+    margin-top: 12px;
+}
+
+.besplatno{
+    padding-left: 18px;
+    border-left: 1px solid #de3227;
+    padding-bottom: 6px;
+}
+
+.besplatno p{
+    font-size: 16px;
+}
+
+.besplatno a{
+    font-size: 20px;
+    font-family: 'FiraSansBold';
+}
+
+.order__call{
+    display: block;
+    height: 22px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #e7352a;
+    width: 156px;
+    font-size: 11px !important;
+    font-family: 'FiraSansBold';
+    padding-top: 5px;
+    margin-top: 9px;
+}
+
+.order__call:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.form__menu{
+    padding: 31px 0;
+    border-top: 1px solid #d9dbdc;
+}
+
+.bottom__menu__head{
+    font-size: 26px;
+    font-family: 'FiraSansBold';
+    margin-bottom: 32px;
+}
+
+.bottom__menu li{
+    margin-bottom: 10px;
+}
+
+.quest{
+    color: #000;
+    text-decoration: underline;
+    padding-right: 20px;
+    background-image: url(images/select.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.quest:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.answer{
+    margin: 15px 0;
+    display: none;
+}
+
+.answer p{
+    line-height: 1.5;
+}
+
+.form__wrap{
+    margin-top: 24px;
+}
+
+.form__head{
+    margin-left: 16px;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.form__wrap textarea{
+    width: 100%;
+    height: 82px;
+    resize: none;
+    background-color: #f1f5f4;
+    border: 1px solid #c5ccd4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form__wrap input{
+    margin-top: 12px;
+}
+
+.form__wrap input[type = "text"]{
+    width: 260px;
+    height: 34px;
+    background-color: #f1f5f4;
+    border: 1px solid #c5ccd4;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #000;
+    margin-right: 7px;
+}
+
+.form__wrap input[type = "submit"]{
+    width: 200px;
+    height: 34px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #e7352a;
+    border: none;
+    font-family: 'FiraSansBold';
+}
+
+.footer{
+    background-color: #000;
+    padding: 21px 0;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 12px;
+}
+
+.copyright p a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.social__wrap{
+    position: relative;
+}
+
+.foot__social{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+}
+
+.foot__social li{
+    float: left;
+    margin-right: 20px;
+}
+
+.foot__social li:last-child{
+    margin-right: 0;
+}
+
+.foot__addr{
+    font-size: 12px;
+    color: #fff;
+}
+
+/*-------------ПОПАП---------------*/
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    max-width: 485px;
+    top: 100px;
+    left: 100px;
+    background-color: #fff;
+    z-index: 999;
+    position: absolute;
+    padding: 38px;
+    border-radius: 4px;
+    border: 2px solid #de3227;
+}
+
+.close1 {
+    float: right;
+    font-size: 21px;
+    color: #de3227;
+    right: 28px;
+    top: 16px;
+    position: absolute;
+}
+
+.close1:hover{
+    text-decoration: none;
+    color: #de3227;
+}
+
+.popup .head{
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.popup input{
+    width: 100%;
+    height: 44px;
+    border: 1px solid #e9e9ea;
+    border-radius: 4px;
+    color: #807e7e;
+    font-size: 16px;
+    padding: 0 23px 0 23px;
+    margin-bottom: 18px;
+}
+
+.popup input[type="submit"]{
+    cursor: pointer;
+    background-color: #de3227;
+    color: #fff;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.popup input[type="submit"]:hover{
+    background-color: #de5a52;
+}
+
+.clear__mob{
+    display: none;
+}
+/*-------------------Личный кабинет-------------------*/
+.lk__block{
+    border-top: 1px solid #e0e4e3;
+}
+
+.lk__block__wrap h2{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+}
+
+.lk__block__wrap{
+    min-height: 114px;
+    padding: 25px 0;
+    position: relative;
+}
+
+.screen1__wrap__inner{
+    background: none;
+    min-height: auto;
+}
+
+.lk__menu{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.lk__menu li{
+    float: left;
+}
+
+.lk__menu li a{
+    font-family: 'FiraSansBold';
+    display: block;
+    padding: 10px 0;
+    margin-right: 28px;
+    border-bottom: 3px solid #fff;
+}
+
+.lk__menu li:last-child a{
+    margin-right: 0;
+}
+
+.lk__menu li a:hover{
+    border-bottom: 3px solid #de3227;
+    text-decoration: none;
+}
+
+.lk__menu li a.active{
+    border-bottom: 3px solid #de3227;
+}
+
+.lk__reg__form{
+    background-color: #f1f5f4;
+    padding: 40px 0;
+    border-top: 1px solid #d5ddde;
+}
+
+.row__field{
+    margin-bottom: 8px;
+}
+
+.row__field label{
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.row__field input[type = "text"]{
+    width: 100%;
+    height: 34px;
+    background-color: #f1f5f4;
+    border: 1px solid #c5ccd4;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.row__field p{
+    font-size: 12px;
+    text-align: right;
+}
+
+.save__reg__data{
+    display: block;
+    float: right;
+    width: 206px;
+    height: 32px;
+    text-align: center;
+    color: #fff;
+    font-family: 'FiraSansBold';
+    background-color: #e7352a;
+    border-radius: 9px;
+    padding-top: 9px;
+    margin-top: 5px;
+}
+
+.save__reg__data:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------------АКЦИИ---------------------------*/
+.akcii__item__name{
+    font-size: 24px;
+    font-family: 'OpenSansBold';
+    margin-bottom: 14px;
+}
+
+.akcii__item__date{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'FiraSans';
+    margin-bottom: 14px;
+}
+
+.akcii__item__previewtext{
+    line-height: 1.5;
+    padding-left: 70px;
+    text-align: justify;
+}
+
+.akcii__item__img img{
+    width: 100%;
+}
+
+.akcii__item{
+    display: block;
+    margin-bottom: 95px;
+}
+
+.nav-links{
+    overflow: hidden;
+}
+
+.nav-links span.current{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #f1f5f4;
+    display: block;
+    float: left;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.nav-links a.page-numbers{
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'OpenSansBold';
+    text-align: center;
+    line-height: 2.5;
+}
+
+.nav-links a.page-numbers:hover{
+    background-color: #f1f5f4;
+    color: #000;
+    text-decoration: none;
+}
+
+.cars__inner{
+    background: none;
+    padding: 27px 0 46px 0;
+}
+
+.engine__head{
+    background-image: url(images/engine.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 240px;
+}
+
+.textcontent{
+    padding-top: 43px;
+}
+
+.breadcrumb{
+    background: none;
+    padding: 0;
+}
+
+.breadcrumb-item a{
+    text-decoration: underline;
+}
+
+.breadcrumb-item a:hover{
+    text-decoration: none;
+}
+
+.engine__head h1{
+    font-size: 42px;
+    font-family: 'FiraSansBold';
+}
+
+.engine__head p{
+    font-size: 24px;
+    font-family: 'FiraSans';
+    margin-top: 10px;
+}
+
+.textcontent__text p{
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.textcontent__text h3{
+    text-transform: uppercase;
+    font-family: 'FiraSansBold';
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.video-block {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.video-block iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.alignleft{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.card__car{
+    padding: 20px 0;
+}
+
+.card__car h2{
+    font-size: 36px;
+    font-family: 'FiraSansBold';
+    line-height: 1;
+    margin-bottom: 45px;
+}
+
+.card__car__head{
+    overflow: hidden;
+}
+
+.card__car__head__left{
+    float: left;
+    width: 50%;
+}
+
+.card__car__head__right{
+    float: right;
+    width: 50%;
+}
+
+.card__car__head h1{
+    font-size: 24px;
+    font-family: 'FiraSansBold';
+}
+
+.card__car__head__right div{
+    float: right;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'FiraSansBold';
+    padding-top: 44px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hit{
+    background-image: url(images/hits.png);
+}
+
+.selection{
+    background-image: url(images/selection.png);
+}
+/*------------------------АДАПТИВ---------------------*/
+@media(max-width: 1199px){
+    .container{
+        padding: 0 15px;
+    }
+
+    .logo{
+        margin-left: 55px;
+    }
+
+    .form__wrap input[type = "text"]{
+        width: 234px;
+    }
+}
+
+@media(max-width: 991px){
+    .engine__head{
+        background-position: center 121px;
+        min-height: 341px;
+    }
+
+    .akcii__item__previewtext{
+        padding-left: 0;
+    }
+
+    .screen1{
+        margin-top: 0;
+    }
+
+    .form__wrap input[type = "text"]{
+        width: 100%;
+    }
+
+    .form__wrap input[type = "submit"]{
+        width: 100%;
+    }
+
+    .logo{
+        float: none;
+        width: 246px;
+        margin: 0 auto;
+    }
+
+    .header__wrap__right{
+        float: none;
+        margin-top: 40px;
+    }
+
+    .top__menu{
+        display: none;
+    }
+
+    .screen1__wrap{
+        background-size: 45%;
+        background-position: right bottom;
+    }
+
+    .top__video{
+        position: static;
+        margin-top: 30px;
+    }
+
+    .action__item{
+        margin-bottom: 30px;
+    }
+
+    .form__consult__form input{
+        margin-bottom: 10px;
+    }
+
+    .euro__services__wrapper{
+        background-size: 50%;
+    }
+
+    .besplatno{
+        margin-top: 30px;
+        padding-left: 0;
+        border-left: 0;
+    }
+}
+
+@media(max-width: 767px){
+    .form__wrap input[type = "text"]{
+        width: 374px;
+    }
+
+    .form__wrap input[type = "submit"]{
+        width: 200px;
+    }
+
+    .container{
+        max-width: 620px;
+    }
+
+    #reviews__slider{
+        padding: 0 35px;
+    }
+
+    .owl-next{
+        right: 0;
+    }
+
+    .owl-prev{
+        left: 0;
+    }
+
+    .foot__addr{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 630px){
+    .form__wrap input[type = "text"]{
+        width: 100%;
+    }
+
+    .form__wrap input[type = "submit"]{
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px){
+    .lk__link{
+        float: right;
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .top__phone{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .clear__mob{
+        display: block;
+        clear: both;
+    }
+}
+
+@media(max-width: 576px){
+    .akcii__item__previewtext{
+        margin-bottom: 30px;
+    }
+
+    .akcii__item{
+        margin-bottom: 30px;
+    }
+
+    .akcii__item__date{
+        text-align: left;
+    }
+
+    .row__field label{
+        margin-bottom: 5px;
+    }
+
+    .cars__sort li{
+        margin-bottom: 20px;
+    }
+
+    .copyright p{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .foot__addr{
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .col-car{
+        max-width: 100% ;
+        flex: 0 0 100% ;
+        ms-flex: 0 0 100%;
+    }
+
+    #map{
+        margin-bottom: 30px;
+    }
+
+    .bottom__menu__head{
+        text-align: center;
+    }
+
+    .bottom__menu li a{
+        display: block;
+        text-align: center;
+    }
+
+    .quest{
+        background: none;
+        display: block;
+        text-align: center;
+    }
+
+    .form__wrap input[type = "text"]{
+        width: 100%;
+    }
+
+    .form__wrap input[type = "submit"]{
+        width: 100%;
+    }
+}
+
+@media(max-width: 514px){
+    .lk__block__wrap h2{
+        margin-bottom: 55px;
+    }
+}
+
+@media(max-width: 480px){
+    .screen1__wrap__inner{
+        display: none;
+    }
+
+    .all__offers{
+        width: 100%;
+    }
+
+    .all__actions{
+        width: 100%;
+    }
+
+    .screen1__wrap h1 span{
+        font-size: 30px !important;
+    }
+
+    .screen1__wrap{
+        background: none;
+        min-height: 212px;
+    }
+}
+
+@media(max-width: 430px){
+    .engine__head {
+        background-position: center 180px;
+        min-height: 410px;
+    }
+}
+
+@media(max-width: 420px){
+    .col-euro{
+        max-width: 100% ;
+        flex: 0 0 100% ;
+        ms-flex: 0 0 100%;
+    }
+
+    .euro__services__wrapper{
+        background-size: 73%;
+    }
+}
+
+@media(max-width: 400px){
+    .form__consult__form{
+        padding: 0;
+    }
+
+    .prezident__wrap h2{
+        margin-top: 80px;
+    }
+
+    .prezident__wrap{
+        background-position: center 20px;
+    }
+
+    .logo{
+        float: right;
+    }
+
+    .header__wrap__right{
+        margin-top: 95px;
+    }
+
+    .screen1__wrap h1 span {
+        font-size: 26px !important;
+    }
+
+    .screen1 {
+        margin-top: 23px;
+    }
+
+    .euro__services__wrapper{
+        padding-bottom: 0;
+    }
+
+    .contacts__head{
+        font-size: 30px;
+    }
+
+    .euro__services h2{
+        font-size: 30px;
+    }
+
+    .prezident__wrap h2{
+        font-size: 30px;
+    }
+
+    .reviews h2{
+        font-size: 30px;
+    }
+
+    .actions h2{
+        font-size: 30px;
+    }
+
+    .cars__sort li a.active{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 360px) {
+    .alignleft{
+        width: 100%;
+    }
+}
+
+@media(max-width: 320px){
+    .social__top li{
+        margin-right: 19px;
+    }
+}

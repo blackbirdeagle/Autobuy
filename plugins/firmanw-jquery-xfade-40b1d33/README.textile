@@ -1,0 +1,29 @@
+h1. jQuery xFade
+
+A jQuery plugin to fade/slide the elements inside the container based/extended from "jQuery Innerfade":http://medienfreunde.com/lab/innerfade/ by Torsten Baldes with the controls as addition.
+
+h2. Usage
+
+The scipts
+<pre><code><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.xfade-1.0.min.js"></script></code></pre>
+
+Initialization
+<pre><code>$(document).ready(function() {
+  $('#container').xfade();
+});</code></pre>
+
+h2. Available Options
+* *effect*:   Animation effect. Can be set to 'fade' or 'slide'. (_Default: 'fade'_),
+* *speed*:    Transition speed in milliseconds or keywords 'slow', 'normal' or 'fast'. (_Default: 'normal'_),
+* *timeout*:  Delay between transitions in milliseconds (_Default: '2000'_),
+* *order*:    Items order. Can be set to 'sequence', 'random' or 'random-start'. (_Default: 'sequence'_),
+* *height*:   Container height. (_Default: 'auto'_),
+* *containerClass*:    CSS class to added into container. (_Default: false_),
+* *children*: jQuery children selector. (_Default: false_)
+* *onBefore*: Callback that fires right before the transition. It receives the following arguments: current item index, last item index, current item, last item and items. (_Default: false_)
+
+h2. Demo
+
+"Minimal implementation":http://labs.firmanw.com/jquery-xfade/docs/minimal.html
+"Advanced controls":http://labs.firmanw.com/jquery-xfade/docs/controls.html

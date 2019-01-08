@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type"  content="text/html;charset=UTF-8" />
+<title>Demo | jQuery xFade</title>
+<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+<div id="container">
+<h1>jQuery xFade Plugin</h1>
+<p>A jQuery plugin to fade/slide the elements inside the container based/extended from <a href="http://medienfreunde.com/lab/innerfade/">jQuery InnerFade</a> by <a href="http://medienfreunde.com/">Torsten Baldes</a> with the controls as addition.</p>
+
+<h2>Usage</h2>
+<p>The scripts</p>
+<pre>
+<code>&lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.xfade-1.0.min.js"&gt;&lt;/script&gt;</code>
+</pre>
+<p>Initialization</p>
+<pre>
+<code>$(document).ready(function() {
+  $('#container').xfade();
+});</code>
+</pre>
+
+<h2>Available Options</h2>
+<table id="options">
+<tr>
+  <th id="key">Key</th>
+  <th id="default">Default</th>
+  <th id="description">Description</th>
+</tr>
+<tr>
+  <td>effect</td>
+  <td>'fade'</td>
+  <td>Animation effect. Can be set to 'fade' or 'slide'.</td>
+</tr>
+<tr class="alt">
+  <td>speed</td>
+  <td>'normal'</td>
+  <td>Transition speed in milliseconds or keywords 'slow', 'normal' or 'fast'.</td>
+</tr>
+<tr>
+  <td>timeout</td>
+  <td>2000</td>
+  <td>Delay between transitions in milliseconds.</td>
+</tr>
+<tr class="alt">
+  <td>order</td>
+  <td>'sequence'</td>
+  <td>Items order. Can be set to 'sequence', 'random' or 'random-start'.</td>
+</tr>
+<tr>
+  <td>height</td>
+  <td>'auto'</td>
+  <td>Container height.</td>
+</tr>
+<tr class="alt">
+  <td>containerClass</td>
+  <td>false</td>
+  <td>CSS class to added into container.</td>
+</tr>
+<tr>
+  <td>children</td>
+  <td>false</td>
+  <td>jQuery children selector.</td>
+</tr>
+<tr class="alt">
+  <td>onBefore</td>
+  <td>false</td>
+  <td>Callback that fires right before the transition. It receives the following arguments:
+  current item index, last item index, current item, last item and items</td>
+</tr>
+</table>
+<h2>Demo</h2>
+<ul>
+  <li><a href="minimal.html">Minimal implementation</a></li>
+  <li><a href="controls.html">Advanced controls</a></li>
+</ul>
+
+</div>
+</body>
+</html>
